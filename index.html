@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DO's List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" type="text/css" href="TodoList.css" />
+  <body>
+    <div id="heading" class="heading"></div>
+    <div class="outer">
+      <div class="input_container">
+        <input type="text" id="TaskInputBox" placeholder="Add your Task..." />
+        <button id="addbutton" onclick="AddTask()">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <div id="yourTask">YOUR TASK</div>
+      <hr />
+      <div>
+        <div class="completion" id="completion"></div>
+        <ol class="Embedded_task" id="Embedded_task"></ol>
+      </div>
+    </div>
+  </body>
+  <script src="TodoList.js"></script>
+</html>
